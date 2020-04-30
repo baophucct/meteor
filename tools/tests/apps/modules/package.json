@@ -25,14 +25,18 @@
     "regenerator-runtime": "^0.11.1",
     "stripe": "^4.4.0",
     "uuid": "^3.1.0",
-    "winston": "^2.3.1"
+    "winston": "^2.3.1",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "test": "METEOR_PROFILE=20 TEST_BROWSER_DRIVER=puppeteer meteor test --full-app --driver-package meteortesting:mocha",
     "browser": "METEOR_PROFILE=20 TEST_BROWSER_DRIVER=puppeteer meteor test --full-app --driver-package meteortesting:mocha",
-    "test-packages": "TEST_BROWSER_DRIVER=puppeteer meteor test-packages --driver-package meteortesting:mocha packages/modules-test-package"
+    "test-packages": "TEST_BROWSER_DRIVER=puppeteer meteor test-packages --driver-package meteortesting:mocha packages/modules-test-package",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "meteor": {
     "testModule": "tests.js"
-  }
+  },
+  "snyk": true
 }
