@@ -9,7 +9,7 @@
     "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.56",
     "@babel/runtime": "^7.1.2",
     "acorn": "file:imports/links/acorn",
-    "aws-sdk": "^2.2.41",
+    "aws-sdk": "^2.814.0",
     "cli-color": "^0.2.3",
     "github": "^0.2.4",
     "idle-gc": "^1.0.1",
